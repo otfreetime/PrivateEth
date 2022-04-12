@@ -24,7 +24,7 @@ ENV address=""
 ENV bootnodeId=""
 ENV bootnodeIp=""
 
-CMD exec geth --bootnodes "enode://$bootnodeId@$bootnodeIp:30301" --networkid "6660001" --verbosity=4 --http --http.addr "0.0.0.0" --http.api "eth,web3,net,admin,debug,db" --http.corsdomain "*" --syncmode="full"
+CMD exec geth --bootnodes "enode://$bootnodeId@$bootnodeIp:30301" --allow-insecure-unlock --networkid "6660001" --verbosity=4 --http --http.addr "0.0.0.0" --http.api "eth,web3,net,admin,debug,db,personal" --http.corsdomain "*" --syncmode="full"
 
 EXPOSE 8545
 EXPOSE 30303
