@@ -88,8 +88,8 @@ curl --location --request POST 'http://localhost:8545' \
     "id": 6,
     "method": "personal_unlockAccount",
     "params": [
-        "0x3590aca93338b0721966a8d0c96ebf2c4c87c544",
-        "word"
+        "0x0981d20d34a0fc96e73ffa783d0c560156142d90",
+        "password"
     ]
 }'
 
